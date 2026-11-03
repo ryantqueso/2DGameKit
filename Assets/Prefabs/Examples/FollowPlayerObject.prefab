@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6908832687702644414}
   - component: {fileID: 6516354870765581288}
   - component: {fileID: 125413905890034599}
+  - component: {fileID: 3078007059053604871}
   m_Layer: 0
   m_Name: FollowPlayerObject
   m_TagString: Untagged
@@ -136,6 +137,7 @@ MonoBehaviour:
   targetIsPlayer: 1
   alternativeTarget: {fileID: 0}
   moveSpeed: 4
+  maxSpeed: 50
   moveInXDirection: 1
   moveInYDirection: 1
 --- !u!58 &125413905890034599
@@ -174,3 +176,45 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &3078007059053604871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879006199826202869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5d8de15459d4d3b9125242c3a14fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trigger
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    triggerExitEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  triggerableByPlayer: 1
+  triggerableByObject: 0
+  triggerableByTaggedObject: 0
+  objectTag: 
+  limitNumberOfUses: 0
+  numberOfUses: 1
+  requiredEnabled: []
+  drawTriggerArea: 1
+  drawTriggerLines: 1
+  triggerAreaColor: {r: 0, g: 1, b: 0, a: 0.5}
+  consoleLogOnTrigger: 0
